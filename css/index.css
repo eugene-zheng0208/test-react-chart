@@ -1,0 +1,43 @@
+body {
+  background: #222;
+  color: #ddd;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+*.icon-button {
+  color: #80B0FF;
+  cursor: pointer;
+}
+
+.flexRow {
+  display: flex;
+}
+
+.flexItem {
+  flex: 1;
+}
+
+/* from https://css-tricks.com/examples/hrs/ */
+hr {
+    border: 0;
+    height: 0; /* Firefox... */
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 0 10px 1px black;
+}
+
+hr:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
